@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Adam-Light";
+    src: url(../fontes/Adam-Light.ttf);
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+
+    font-family: "Adam-Light", sans-serif;
+}

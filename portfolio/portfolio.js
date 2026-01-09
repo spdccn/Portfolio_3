@@ -4,3 +4,6 @@ document.querySelectorAll('.nav-btn').forEach(botao => {
     window.location.href = url;
   });
 });
+
+
+console.log();
