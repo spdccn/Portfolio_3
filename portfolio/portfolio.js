@@ -5,5 +5,8 @@ document.querySelectorAll('.nav-btn').forEach(botao => {
   });
 });
 
+const btn = document.getElementById("toggle-cores");
 
-console.log();
+btn.addEventListener("click", () => {
+    document.body.classList.toggle("invertido");
+});
