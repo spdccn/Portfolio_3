@@ -49,6 +49,7 @@ body.invertido {
     font-family: inherit;
     font-size: 20px;
     cursor: pointer;
+    color: inherit;
 }
 
 .nav-btn:hover {
@@ -60,11 +61,12 @@ body.invertido {
    display: flex;
    flex-direction: column;
    height: 100vh;
+   position: relative;
 }
 
 .imagemContainer {
     margin-top: 40px;
-    flex: 1 1 auto;
+    flex: 1;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
@@ -74,10 +76,31 @@ body.invertido {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: bottom;
+    object-position: top;
 }
 
 #toggle-cores {
-    background: red;
-    color: white;
+    width: 20px;
+    height: 20px;
+
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+#toggle-cores img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
 }
